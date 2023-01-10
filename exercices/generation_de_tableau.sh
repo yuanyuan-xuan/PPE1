@@ -19,7 +19,6 @@ echo "<header>
          <table border=\"10px\">" >> tableau.html
 
          echo "<tr><th>ligne</th>
-                   <th>Code</th>
                    <th>url</th>" >>tableau.html
 
 i=0 #cela permet d'ajouter la numérotation au début
@@ -27,8 +26,6 @@ i=0 #cela permet d'ajouter la numérotation au début
 while read line #condition while = read line
         do
         echo "<tr><td>$((i=i+1))<td>$line</td></td></tr>" >> tableau.html
-        code=$(curl -s -w "%{http_code}" 'url' -0 /dev/null)
-        echo -e "\tcode : $code" >>tableau.html
         done < $fichier_urls
 
        
