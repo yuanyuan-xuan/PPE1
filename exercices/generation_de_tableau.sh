@@ -27,7 +27,7 @@ i=0 #cela permet d'ajouter la numérotation au début
 while read line #condition while = read line
         do
         echo "<tr><td>$((i=i+1))<td>$line</td></td></tr>" >> tableau.html
-        code=$(curl -ILs $fichier_urls | grep -e "^HTTP/" | grep -Eo "[0-9]{3}" |tail -n 1)
+        code=$(curl -s -w "%{http_code}" 'url' -0 /dev/null)
         echo -e "\tcode : $code" >>tableau.html
         done < $fichier_urls
 
