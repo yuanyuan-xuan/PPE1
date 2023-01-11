@@ -14,11 +14,4 @@
 <text>Ici, le contenu du fichier en-2.</text>
 </page> §
 </lang>
-<lang="ch">
-<page="ch-1">
-<text>Ici, le contenu du fichier ch-1.</text>
-</page> §
-<page="ch-2">
-<text>Ici, le contenu du fichier ch-2.</text>
-</page> §
-</lang>
+
