@@ -11,7 +11,7 @@ then
 fi
 
 folder=$1 # dumps-text OU contextes
-basename=$2 # en, fr, ru, pl, it, jp, etc...
+basename=$2 # en, fr, ch, etc...
 
 echo "<lang=\"$basename\">" > "./itrameur/$folder-$basename.txt"
 
